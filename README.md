@@ -1,4 +1,4 @@
-# SODI-SELD
+# AECA-SELD
 ## DATASETS
 The dataset can be downloaded from the link-[https://zenodo.org/records/6387880](https://zenodo.org/records/6387880) and [https://zenodo.org/records/6406873](https://zenodo.org/records/6406873)  
 Please look at the following links in detail about dataset:[https://dcase.community/challenge2022/task-sound-event-localization-and-detection-evaluated-in-real-spatial-sound-scenes](https://dcase.community/challenge2022/task-sound-event-localization-and-detection-evaluated-in-real-spatial-sound-scenes)
@@ -22,7 +22,7 @@ This repository consists of multiple Python scripts forming one big architecture
   The `cls_compute_seld_results.py` script computes the metrics results on your DCASE output format files. You can switch between using polar or Cartesian based scoring. Ideally both should give identical results.    
  ### Prerequisites
  The provided codebase has been tested on python 3.8.11 and torch 1.10.0  
- ### Training the SODI-SELD  
+ ### Training the AECA-SELD  
  For the  Ambisonic dataset , download the respective zip file. This contains both the audio files and the respective metadata. first ,Unzip the files under the same 'base_folder/', ie,  then the 'base_folder/' should have two folders - 'foa_dev/' and 'metadata_dev/' after unzipping.  
  
  Now update the respective dataset name and its path in script. For the above example, you will change and . Also provide a directory path in the same script where all the features and labels will be dumped. `parameter.pydataset='foa'dataset_dir='base_folder/'feat_label_dirparameter.py`
